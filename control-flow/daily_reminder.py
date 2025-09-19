@@ -3,10 +3,10 @@
 # Prompt for task details
 Task = input("Enter your task: ")
 Priority = input("Enter the task's priority (high, medium, low): ").lower()
-Time_bound = input("Is this task time-bound? (yes/no): ").lower()
+Time_Bound = input("Is this task time-bound? (yes/no): ").lower()
 
 # Process with match-case
-match priority:
+match Priority:
     case "high":
         reminder = f"Your task '{Task}' is HIGH priority. Don't delay!"
     case "medium":
