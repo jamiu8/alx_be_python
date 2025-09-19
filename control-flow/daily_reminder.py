@@ -21,5 +21,4 @@ if time_bound == "yes":
     reminder += " This task requires immediate attention today!"
 
 # Final output
-print("\n=== Daily Reminder ===")
-print(reminder)
+print(f"Reminder: {reminder}")
