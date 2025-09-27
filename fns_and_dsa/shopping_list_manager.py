@@ -1,5 +1,7 @@
+# shopping_list_manager.py
+
 def display_menu():
-    print("Shopping List Manager")
+    print("\nShopping List Manager")
     print("1. Add Item")
     print("2. Remove Item")
     print("3. View List")
@@ -12,22 +14,23 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == '1':
-            # Prompt for and add an item
-            item = input("item name: ")
+            item = input("Enter the item to add: ")
             shopping_list.append(item)
-            pass
+            print(f"{item} has been added to your shopping list.")
         elif choice == '2':
-            # Prompt for and remove an item
-            item = input("item name: ")
+            item = input("Enter the item to remove: ")
             if item in shopping_list:
                 shopping_list.remove(item)
+                print(f"{item} has been removed from your shopping list.")
             else:
-                print("item doesnt exist")
-            pass
+                print(f"{item} was not found in your shopping list.")
         elif choice == '3':
-            # Display the shopping list
-            print(shopping_list)
-            pass
+            if shopping_list:
+                print("Your shopping list:")
+                for thing in shopping_list:
+                    print("-", thing)
+            else:
+                print("Your shopping list is empty.")
         elif choice == '4':
             print("Goodbye!")
             break
