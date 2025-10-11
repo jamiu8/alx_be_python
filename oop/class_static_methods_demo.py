@@ -1,0 +1,2 @@
+def sky():
+    pass
