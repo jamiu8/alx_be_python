@@ -32,4 +32,7 @@ class Library():
     def list_books(self):
         print(self.books)
 
+    def __str__(self):
+        pass
+
         
