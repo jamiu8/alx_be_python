@@ -30,7 +30,8 @@ class Library():
        self.books.append(book)
 
     def list_books(self):
-        print(self.books)
+        for n in self.books:
+            print(n)
 
     def __str__(self):
         pass
